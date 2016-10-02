@@ -155,6 +155,7 @@ var pageTest = {
 	},
 	createTest: function(x) {
 		//Создаем сам тест
+		var form = x;
 		for (var i = 0; i < this.test.length; i++) {
 			// Перебор вопросов
 			
@@ -162,12 +163,12 @@ var pageTest = {
 			fieldset.style.border = "none";
 			fieldset.style.margin = "0";
 			fieldset.style.padding = "0";
-			x.appendChild(fieldset);
+			form.appendChild(fieldset);
 
 			var legend = document.createElement('legend');
 			legend.innerHTML = i + 1 + '. ' + this.test[i].question;
 			legend.style.fontSize = "24px";
-			legend.style.margin = "25px 0 10px 0px";
+			legend.style.padding = "25px 0 10px 0px";
 			fieldset.appendChild(legend);
 
 			for (var j = 0; j < this.test[i].answers.length; j++) {
