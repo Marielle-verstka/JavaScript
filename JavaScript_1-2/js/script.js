@@ -2,8 +2,19 @@ var a = +prompt('Введите число', '');
 var b = +prompt('Введите степень, в которую желаете возвести число', '');
 function pow(a, b) {
 	// Основание и показатель должны быть целыми числами
-	if (isNaN(a) || isNaN(b)) {
+	//Преобразование дробных чисел
+	a = parseInt(a);
+	b = parseInt(b);
+
+	function isNumeric(n) {
+  		return !isNaN(parseFloat(n)) && isFinite(n);
+	};
+	if (!isNumeric(a) || !isNumeric(b)) {
 		return ("Введите корректное число");
+	}
+	//Исключение
+	if (a === 0 && b === 0) {
+		return ("Число не определено");
 	}
 	// Любое число, возведенное в степень 0, равно 1
 	if (b == 0) {
