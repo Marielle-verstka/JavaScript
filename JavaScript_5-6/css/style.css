@@ -1,0 +1,18 @@
+.container {
+	padding-top: 25px;
+	font-size: 60px;
+}
+.btn {
+	width: 100px;
+}
+.display,
+.panel {
+	text-align: center;
+	background: #b7edea;
+}
+span {
+	display: inline-block;
+}
+.text {	
+	width: 65px;
+}
