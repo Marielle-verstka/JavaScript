@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8" />
+	<title>myTooltip</title>
+	<link rel="stylesheet" href="css/reset-min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">	
+</head>
+<body>
+	<form action="#" method="post">
+		<fieldset class="clearfix">
+			<div class="box clearfix">
+			    <label for="firstname" class="clearfix">Firstname:
+			    	<input type="text" name="firstname" id="firstname" value="" required>
+			    </label>
+			    <span class="help">Please provide your firstname.</span>
+		    </div>
+			<div class="box clearfix">
+			    <label for="lastname" class="clearfix">Last name:
+			    	<input type="text" name="lastname" id="lastname" value="" required>
+				</label>
+			    <span class="help">Please provide also your lastname.</span>
+		    </div>
+			<div class="box clearfix">
+			    <label for="address" class="clearfix">Address:
+			    	<input type="text" name="address" id="address" value="">
+				</label>
+			    <span class="help">Your home or work address.</span>	
+		    </div>		
+		</fieldset>
+		<span id="button" class="button">Show HELP</span>
+	</form>
+	<!-- JS код -->
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/script.js"></script>
+</body>	
+</html>
+
+
